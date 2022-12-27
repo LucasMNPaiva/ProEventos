@@ -8,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventosComponent implements OnInit {
 
-  public eventos : any;
+  public eventos : any = [];
+  exibirImagem = true;
+  margemImagem =2
+  larguraImagem = 50
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
